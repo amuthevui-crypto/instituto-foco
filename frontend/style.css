@@ -79,3 +79,18 @@ button {
 button:hover {
     background: #a50f1a;
 }
+#mensagem {
+    text-align: center;
+
+    font-size: 14px;
+
+    margin-top: 10px;
+}
+
+.erro {
+    color: red;
+}
+
+.sucesso {
+    color: green;
+}
