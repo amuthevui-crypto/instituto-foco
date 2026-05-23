@@ -28,4 +28,9 @@ formulario.addEventListener("submit", function(evento) {
 
     mensagem.classList.add("sucesso");
 
+    setTimeout(() => {
+
+        window.location.href = "dashboard.html";
+
+    }, 1000);
 });
