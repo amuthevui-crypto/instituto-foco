@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*PAGINA DE LOGIN*/
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background: #f4f4f4;
 }
 
@@ -99,6 +99,7 @@ button:hover {
 
     min-height: 100vh;
 }
+/*DASHBOARD DA PAGINA ADMINISTRATIVA*/
 
 .sidebar {
     width: 250px;
@@ -164,4 +165,97 @@ button:hover {
     color: #c1121f;
 
     margin-bottom: 10px;
+}
+
+
+/*PAGINA DE CADASTRO DE ALUNOS*/
+.pagina-alunos {
+
+    max-width: 1000px;
+
+    margin: 40px auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#formAluno {
+    display: flex;
+
+    gap: 10px;
+
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: white;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+
+    padding: 12px;
+
+    text-align: left;
+}
+
+th {
+    background: #c1121f;
+
+    color: white;
+}
+
+.btn-remover {
+    background: red;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 12px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+#formAluno input,
+#formAluno select {
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    width: 100%;
+}
+#formAluno button {
+
+    background: #c1121f;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+#formAluno button:hover {
+
+    background: #780000;
 }

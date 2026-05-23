@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="pagina-alunos">
+
+        <h1>Cadastro de Alunos</h1>
+
+        <form id="formAluno">
+
+            <input 
+                type="text"
+                id="nome"
+                placeholder="Nome do aluno"
+            >
+            <input 
+                type="text"
+                id="email"
+                placeholder="seuemail@.gmail.com"
+            >
+            <input 
+                type="number"
+                id="idade"
+                placeholder="Insira sua idade"
+            >
+
+           <select id="curso">
+
+    <option value="">
+        Selecione o curso
+    </option>
+
+    <option value="Suporte Tecnico Informático">
+        Suporte Tecnico Informático
+    </option>
+
+    <option value="Contabilidade">
+        Contabilidade
+    </option>
+
+    <option value="Gestão de Recursos Humanos">
+        Gestão de Recursos Humanos
+    </option>
+
+    <option value="Electricidade Industrial">
+        Electricidade Industrial
+    </option>
+
+    <option value="Medicina Geral">
+        Medicina Geral
+    </option>
+
+    <option value="Mecanica Industrial">
+        Mecanica Industrial
+    </option>
+
+</select>
+        <input 
+                type="password"
+                id="senha"
+                placeholder="Digite uma palavra passe"
+            >
+
+            <button type="submit">
+                Cadastrar
+            </button>
+
+        </form>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Nome</th>
+                    <th>Curso</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="listaAlunos">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="alunos.js"></script>
+
+</body>
+
+</html>
