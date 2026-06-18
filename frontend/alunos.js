@@ -17,15 +17,36 @@ const alunos = [];
 formAluno.addEventListener("submit", function(evento) {
 
     evento.preventDefault();
+    if(
+    nome.value === "" ||
+    email.value === "" ||
+    idade.value === "" ||
+    curso.value === "" ||
+    senha.value === ""
+){
+    alert("Preencha todos os campos!");
 
-   const aluno = {
+    return;
+}
+
+const aluno = {
+
     id: Date.now(),
+
+    codigoEstudante: "",
+
     nome: nome.value,
+
     curso: curso.value,
+
     idade: idade.value,
+
     email: email.value,
+
     senha: senha.value,
-    status: "Pendente mediante a inscrição"
+
+    status: "Pendente"
+
 };
 alunos.push(aluno);
 
@@ -45,25 +66,53 @@ function renderizarAlunos() {
         
             <tr>
 
+                <td>${aluno.codigoEstudante || "-"}</td>
+
                 <td>${aluno.nome}</td>
 
                 <td>${aluno.curso}</td>
 
-                <td>${aluno.status}</td>
+                <td class="${aluno.status}">
+                    ${aluno.status}
+                </td>
 
                 <td>
-                    <button 
-                        class="btn-remover"
+
+                    <button
+                     onclick="aprovarAluno(${indice})"
+                    >
+                     Aprovar
+                    </button>
+
+                    <button
+                    class="btn-remover"
                         onclick="removerAluno(${indice})"
                     >
-                        Remover
-                    </button>
+                     Remover
+                </button>
+
                 </td>
 
             </tr>
 
         `;
     });
+
+}
+function aprovarAluno(indice) {
+
+    if(alunos[indice].status === "Activo") {
+
+        return;
+
+    }
+
+    alunos[indice].status = "Activo";
+
+    alunos[indice].codigoEstudante =
+        "FOCO" + String(indice + 1).padStart(3, "0");
+
+    renderizarAlunos();
 
 }
 

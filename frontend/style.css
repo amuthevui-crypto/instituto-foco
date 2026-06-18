@@ -259,3 +259,12 @@ th {
 
     background: #780000;
 }
+.Pendente {
+    color: orange;
+    font-weight: bold;
+}
+
+.Activo {
+    color: green;
+    font-weight: bold;
+}
