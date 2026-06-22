@@ -1,0 +1,111 @@
+.cadastro-container {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+}
+
+.cadastro-card {
+
+    background: white;
+
+    width: 100%;
+
+    max-width: 550px;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.cadastro-card img {
+
+    width: 140px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+}
+
+.cadastro-card h1 {
+
+    text-align: center;
+
+    color: #c1121f;
+
+    margin-bottom: 25px;
+}
+
+#formCadastro {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+#formCadastro input,
+#formCadastro select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+#formCadastro button {
+
+    background: #c1121f;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+#formCadastro button:hover {
+
+    background: #900c16;
+}
+
+#mensagem {
+
+    text-align: center;
+
+    margin-top: 10px;
+
+    font-weight: bold;
+}
+
+.erro {
+
+    color: red;
+}
+
+.sucesso {
+
+    color: green;
+}

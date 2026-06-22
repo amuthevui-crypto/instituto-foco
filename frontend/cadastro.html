@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro de Aluno</title>
+
+    <link rel="stylesheet" href="./CSS INSTITUTO FOCO/glogal.css">
+    <link rel="stylesheet" href="./CSS INSTITUTO FOCO/cadastro.css">
+
+</head>
+
+<body>
+
+    <div class="cadastro-container">
+
+        <div class="cadastro-card">
+
+            <img
+                src="logo.png"
+                alt="Instituto Foco"
+            >
+
+            <h1>Cadastro de Aluno</h1>
+
+            <form id="formCadastro">
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Nome Completo"
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email"
+                >
+
+                <input
+                    type="number"
+                    id="idade"
+                    placeholder="Idade"
+                >
+
+                <select id="curso">
+
+                    <option value="">
+                        Selecione o Curso
+                    </option>
+
+                    <option value="Suporte Tecnico Informático">
+                        Suporte Tecnico Informático
+                    </option>
+
+                    <option value="Contabilidade">
+                        Contabilidade
+                    </option>
+
+                    <option value="Gestão de Recursos Humanos">
+                        Gestão de Recursos Humanos
+                    </option>
+
+                    <option value="Electricidade Industrial">
+                        Electricidade Industrial
+                    </option>
+
+                </select>
+
+                <input
+                    type="password"
+                    id="senha"
+                    placeholder="Crie uma senha"
+                >
+
+                <button type="submit">
+
+                    Solicitar Cadastro
+
+                </button>
+
+                <p id="mensagem"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="cadastro.js"></script>
+
+</body>
+
+</html>
