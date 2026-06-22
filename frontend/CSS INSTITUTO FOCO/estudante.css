@@ -1,0 +1,51 @@
+.aluno-container {
+
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.aluno-card {
+
+    background: white;
+
+    width: 400px;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+
+.aluno-card img {
+
+    width: 150px;
+
+    margin-bottom: 20px;
+
+}
+
+.aluno-card h1 {
+
+    color: #c1121f;
+
+    margin-bottom: 25px;
+
+}
+
+.aluno-card button {
+
+    width: 100%;
+
+    margin-bottom: 15px;
+
+}

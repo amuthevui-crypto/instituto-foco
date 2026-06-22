@@ -10,6 +10,8 @@ const mensagem = document.querySelector("#mensagem");
 
 const perfil = document.querySelector("#perfil");
 
+const linkCadastro = document.querySelector("#linkCadastro");
+
 formulario.addEventListener("submit", function(evento) {
 
     evento.preventDefault();
@@ -50,12 +52,33 @@ formulario.addEventListener("submit", function(evento) {
 
         }
 
-        else if(perfil.value === "aluno") {
+       else if(perfil.value === "aluno") {
 
-            alert("Portal do aluno ainda será criado");
+    window.location.href = "estudante.html";
 
-        }
+}
 
     }, 1000);
+
+});
+
+perfil.addEventListener("change", function() {
+
+    if(perfil.value === "aluno") {
+
+        usuario.placeholder = "Código de Estudante";
+
+        linkCadastro.innerHTML =
+            'Não tens uma conta? <a href="cadastro.html">Cadastre-se</a>';
+
+    }
+
+    else {
+
+        usuario.placeholder = "Usuário";
+
+        linkCadastro.innerHTML = "";
+
+    }
 
 });

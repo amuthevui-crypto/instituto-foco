@@ -66,3 +66,26 @@ button:hover {
 .sucesso {
     color: green;
 }
+#linkCadastro {
+
+    text-align: center;
+
+    margin-top: 10px;
+
+}
+
+#linkCadastro a {
+
+    color: #c1121f;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+}
+
+#linkCadastro a:hover {
+
+    text-decoration: underline;
+
+}
