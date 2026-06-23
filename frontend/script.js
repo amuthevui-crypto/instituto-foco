@@ -48,7 +48,7 @@ formulario.addEventListener("submit", function(evento) {
 
         else if(perfil.value === "funcionario") {
 
-            window.location.href = "alunos.html";
+            window.location.href = "funcionario.html";
 
         }
 
