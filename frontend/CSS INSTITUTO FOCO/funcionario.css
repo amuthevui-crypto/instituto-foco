@@ -75,6 +75,8 @@
     border-radius: 10px;
 
     box-shadow: 0 2 20px rgba(0,0,0,0.1);
+
+    cursor: pointer;
 }
 
 .card h3 {
@@ -204,4 +206,31 @@
     border-radius:30px;
 
     box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+.sidebar li{
+
+    border-radius:10px;
+
+    transition:0.3s;
+
+
+}
+
+.sidebar li.activo{
+
+    background:#ffffff;
+
+}
+
+.sidebar li.activo a{
+
+    color:#c1121f;
+
+    font-weight:bold;
+
+}
+.sidebar li:hover{
+
+    background:#ffffff22;
+
 }
